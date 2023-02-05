@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-color: var(--white);
+	box-sizing: border-box;
+}
+
+:root {
+	--white:#F8F2F2;
+	--grey: #d3d3d3;
+	--black:#382E33;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	flex-direction: column;
+}
+
+.section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: start;
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+}
+
+.section.right {
+	float: right;
+	width: 70%;
+}
+
+.section.left {
+	float: left;
+	width: 70%;
+}
+
+.section.aw2022 {
+	background-image: url(/assets/images/aw2022/aw-2022-background.png);
+}
+
+.section.octopodes {
+	background-image: url(/assets/images/octopodes/octopodes-background.png);
+}
+
+.section.moodly {
+	background-image: url(/assets/images/moodly/moodly-background.png);
+}
+
+.section.nuclear-summer {
+	background-image: url(/assets/images/nuclear-summer/nuclear-summer-background.png);
+}
+
+.section.dogeared {
+	background-image: url(/assets/images/dogeared/dogeared-background.png);
+}
+
+.section img {
+	width: 70%;
+	height: auto;
+	display: block;
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+	.section.left {
+		width: 100%;
+	}
+
+	.section.right {
+		width: 100%;
+	}
+	
+
+}
+
+.button {
+	margin: 40px;
+	border: none;
+	color: var(--black);
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	box-shadow: -5px 5px var(--black);
+	border: solid 3px var(--black);
+	border-radius: 30px;
+}
+
+.button:hover {
+	cursor: pointer;
+	transform: translate(-3px, 3px);
+	box-shadow: -3px 3px var(--black);
+}

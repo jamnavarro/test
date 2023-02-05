@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend');
+@import url('https://fonts.googleapis.com/css?family=Suwannaphum');
+@import "style.css";
+
+* {
+	color: var(--black);
+	font-family: "Lexend", Helvetica, Arial, sans-serif;
+}
+
+.text-container {
+	margin: 50px;
+	background-color: none;
+}
+
+.text.main {
+	font-family: "Suwannaphum", Georgia, Garamond, serif;
+	font-size: 7vw;
+	font-weight: bold;
+	padding: 50px 0px;
+}
+
+.text.main-caption {
+	font-size: 3vw;
+	font-weight: lighter;
+}
+
+.text.header {
+	font-family: "Suwannaphum", Georgia, Garamond, serif;
+	font-size: 4vw;
+	font-weight: bold;
+}
+
+.text.subheader {
+	font-weight: bold;
+	font-size: 3vw;
+}
+
+.text.body {
+	font-size: 2vw;
+}
